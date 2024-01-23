@@ -30,7 +30,7 @@
           <button>search glass</button>
         </div>
       </div>
-      <nav class="navBar">
+      <nav id="navBar" class="navBar">
         <div class="container">
           <ul class="navList">
             <li class="navItem"><a href="#">Products</a></li>
@@ -60,15 +60,25 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
-        <img src="./images/1.jpg" alt="SEMANTIC NAME" />
+      <section id="hero" class="hero">
+        <img src="./images/1.jpg" alt="Sketch image" />
       </section>
-      <section class="space">
+      <section id="space" class="space">
         <h2 class="sectionTitle">Focus on</h2>
-        <span class="details">in door</span>
-        <span class="line"></span>
-        <span class="details">out door</span>
+        <div class="details">
+          <span> in door </span>
+          <span class="line"></span>
+          <span> out door </span>
+        </div>
+      </section>
+      <section id="borocco" class="borocco">
+        <img src="./images/baroque.jpg" alt="Borocco style image" />
+        <a href="#">
+          <h2 class="boroccoTitle">Discover the borocco style</h2>
+          <p class="desc">Find out more</p>
+        </a>
       </section>
     </main>
+    <script src="./js/main.js"></script>
   </body>
 </html>

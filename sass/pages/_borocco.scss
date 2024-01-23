@@ -1,0 +1,47 @@
+.borocco {
+    max-width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    a {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: #fff;
+        transition: all .3s ease;
+
+        .boroccoTitle {
+            font-size: 60px;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        .desc {
+            margin-top: 10px;
+            font-size: 22px;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+
+        &:hover {
+            .boroccoTitle {
+                color: #1e1e1e;
+            }
+
+            .desc {
+                color: #1e1e1e;
+            }
+        }
+    }
+}

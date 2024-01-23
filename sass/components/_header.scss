@@ -1,6 +1,11 @@
 .header {
     .navBar {
         position: fixed;
+        background-color: #00000090;
+
+        &.fixed{
+            top: 0;
+        }
     }
 }
 
@@ -86,7 +91,7 @@
 
                 .title {
                     position: absolute;
-                    top: 40px;
+                    top: 50px;
                     left: 50%;
                     transform: translate(-50%, -50%);
 

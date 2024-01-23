@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "LiberationSans";
+    src: url(../fonts/LiberationSans.ttf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "LiberationSans", "Inter", sans-serif;
+}

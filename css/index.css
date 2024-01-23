@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "LiberationSans";
+  src: url(../fonts/LiberationSans.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "LiberationSans", "Inter", sans-serif;
+}
+
+.header .navBar {
+  position: fixed;
+}
+
+@media (min-width: 1921px) {
+  .header {
+    width: 1920px;
+    margin: 0 auto;
+  }
+  .header .headerTop {
+    width: 100%;
+    height: 40px;
+    padding: 15px 18px;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .headerTop .langList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+  }
+  .header .headerTop .langList .langItem button {
+    color: #bcbcbc;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  .header .headerTop .langList .langItem button:hover {
+    color: #fff;
+  }
+  .header .headerTop .searchBox input {
+    border: 1px solid transparent;
+    outline: none;
+    color: #bcbcbc;
+  }
+  .header .headerTop .searchBox button {
+    color: #bcbcbc;
+    transition: all 0.3s ease;
+  }
+  .header .headerTop .searchBox button:hover {
+    color: #fff;
+  }
+  .header .navBar {
+    width: 1920px;
+  }
+  .header .navBar .container {
+    width: 1680px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .navBar .container .navList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+  }
+  .header .navBar .container .navList .navItem a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  .header .navBar .container .title {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header .navBar .container .title a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .navBar .container .title a span {
+    color: #fff;
+  }
+  .header .navBar .container .menuList {
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+  }
+  .header .navBar .container .menuList .menuItem a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 1921px) {
+  .hero {
+    width: 1920px;
+    height: 1040px;
+    margin: 0 auto;
+  }
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 -270px;
+  }
+}

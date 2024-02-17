@@ -8,30 +8,30 @@
   </head>
   <body>
     <header class="header">
-      <div class="headerTop">
-        <ul class="langList">
-          <li class="langItem">
-            <button>EN</button>
-          </li>
-          <li class="langItem">
-            <button>РУС</button>
-          </li>
-          <li class="langItem">
-            <button>AZ</button>
-          </li>
-        </ul>
-        <div class="searchBox">
-          <input
-            type="text"
-            name="search"
-            id="searchInput"
-            class="searchInput"
-          />
-          <button>search glass</button>
+      <div class="container">
+        <div class="headerTop">
+          <ul class="langList">
+            <li class="langItem">
+              <button>EN</button>
+            </li>
+            <li class="langItem">
+              <button>РУС</button>
+            </li>
+            <li class="langItem">
+              <button>AZ</button>
+            </li>
+          </ul>
+          <div class="searchBox">
+            <input
+              type="text"
+              name="search"
+              id="searchInput"
+              class="searchInput"
+            />
+            <button>search glass</button>
+          </div>
         </div>
-      </div>
-      <nav id="navBar" class="navBar">
-        <div class="container">
+        <nav id="navBar" class="navBar">
           <ul class="navList">
             <li class="navItem"><a href="#">Products</a></li>
             <li class="navItem"><a href="#">2023 Collection</a></li>
@@ -39,7 +39,7 @@
             <li class="navItem"><a href="#">Projects</a></li>
             <li class="navItem"><a href="#">Video</a></li>
           </ul>
-          <h1 class="title">
+          <h1 class="logo">
             <a href="#">
               <span>Rovsen</span>
               <span>Cabbarov</span>
@@ -56,19 +56,23 @@
               <a href="#">About Us</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="hero" class="hero">
-        <img src="./images/1.jpg" alt="Sketch image" />
+        <div class="container">
+          <img src="./images/1.jpg" alt="Sketch image" />
+        </div>
       </section>
       <section id="space" class="space">
-        <h2 class="sectionTitle">Focus on</h2>
-        <div class="details">
-          <span> in door </span>
-          <span class="line"></span>
-          <span> out door </span>
+        <div class="container">
+          <h2 class="sectionTitle">Focus on</h2>
+          <div class="details">
+            <span> in door </span>
+            <span class="line"></span>
+            <span> out door </span>
+          </div>
         </div>
       </section>
       <section id="borocco" class="borocco">
@@ -79,6 +83,32 @@
         </a>
       </section>
     </main>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <ul class="footerNavLinks">
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+        </ul>
+        <ul class="footerLangList">
+          <li class="footerLangItem"><button>EN</button></li>
+          <li class="footerLangItem"><button>РУС</button></li>
+          <li class="footerLangItem"><button>AZ</button></li>
+        </ul>
+        <ul class="footerSocialLinks">
+          <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
+          <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
+          <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
+          <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
+        </ul>
+        <div class="footerTimeBox">© 2024 Rovsen Cabbarov</div>
+      </div>
+    </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>

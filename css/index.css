@@ -19,156 +19,146 @@ html {
   scroll-behavior: smooth;
 }
 
-.header .navBar {
-  position: fixed;
+.container {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+}
+.header .container .headerTop {
+  width: 100%;
+  height: 40px;
+  padding: 15px 18px;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .headerTop .langList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+.header .container .headerTop .langList .langItem button {
+  color: #bcbcbc;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.header .container .headerTop .langList .langItem button:hover {
+  color: #fff;
+}
+.header .container .headerTop .searchBox input {
+  border: 1px solid transparent;
+  outline: none;
+  color: #bcbcbc;
+}
+.header .container .headerTop .searchBox button {
+  color: #bcbcbc;
+  transition: all 0.3s ease;
+}
+.header .container .headerTop .searchBox button:hover {
+  color: #fff;
+}
+.header .container .navBar {
+  width: 100%;
+  padding: 40px 18px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.5647058824);
 }
-.header .navBar.fixed {
+.header .container .navBar.fixed {
   top: 0;
 }
-
-@media (min-width: 1921px) {
-  .header {
-    width: 1920px;
-    margin: 0 auto;
-  }
-  .header .headerTop {
-    width: 100%;
-    height: 40px;
-    padding: 15px 18px;
-    background-color: #1e1e1e;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header .headerTop .langList {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 15px;
-  }
-  .header .headerTop .langList .langItem button {
-    color: #bcbcbc;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-  }
-  .header .headerTop .langList .langItem button:hover {
-    color: #fff;
-  }
-  .header .headerTop .searchBox input {
-    border: 1px solid transparent;
-    outline: none;
-    color: #bcbcbc;
-  }
-  .header .headerTop .searchBox button {
-    color: #bcbcbc;
-    transition: all 0.3s ease;
-  }
-  .header .headerTop .searchBox button:hover {
-    color: #fff;
-  }
-  .header .navBar {
-    width: 1920px;
-  }
-  .header .navBar .container {
-    width: 1680px;
-    margin: 0 auto;
-    padding: 40px 0;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header .navBar .container .navList {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 40px;
-  }
-  .header .navBar .container .navList .navItem a {
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 2px;
-  }
-  .header .navBar .container .title {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .header .navBar .container .title a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .header .navBar .container .title a span {
-    color: #fff;
-  }
-  .header .navBar .container .menuList {
-    align-self: flex-end;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 40px;
-  }
-  .header .navBar .container .menuList .menuItem a {
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 2px;
-  }
+.header .container .navBar .navList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
 }
+.header .container .navBar .navList .navItem a {
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.header .container .navBar .logo {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  cursor: pointer;
+}
+.header .container .navBar .logo a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .container .navBar .logo a span {
+  color: #fff;
+}
+.header .container .navBar .menuList {
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+}
+.header .container .navBar .menuList .menuItem a {
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
 .hero {
-  max-width: 1920px;
+  width: 100%;
   height: 1040px;
-  margin: 0 auto;
+}
+.hero .container {
+  height: 100%;
+}
+.hero .container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-@media (min-width: 1921px) {
-  .hero {
-    width: 1920px;
-    height: 1040px;
-    margin: 0 auto;
-  }
-  .hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 0 -270px;
-  }
-}
 .space {
-  width: 1920px;
+  width: 100%;
   height: 500px;
-  margin: 0 auto;
+}
+.space .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.space .sectionTitle {
+.space .container .sectionTitle {
   font-size: 60px;
   font-weight: 500;
   color: #1e1e1e;
 }
-.space .details {
+.space .container .details {
   width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.space .details span {
+.space .container .details span {
   display: inline-block;
   font-size: 12px;
   color: #1e1e1e;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-.space .details span.line {
+.space .container .details span.line {
   width: 80px;
   height: 1px;
   background-color: #1e1e1e;

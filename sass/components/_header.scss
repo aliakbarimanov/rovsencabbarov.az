@@ -1,20 +1,7 @@
 .header {
-    .navBar {
-        position: fixed;
-        background-color: #00000090;
+    width: 100%;
 
-        &.fixed{
-            top: 0;
-        }
-    }
-}
-
-
-@media (min-width: 1921px) {
-    .header {
-        width: 1920px;
-        margin: 0 auto;
-
+    .container {
         .headerTop {
             width: 100%;
             height: 40px;
@@ -62,65 +49,65 @@
         }
 
         .navBar {
-            width: 1920px;
+            width: 100%;
+            padding: 40px 18px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #00000090;
 
-            .container {
-                width: 1680px;
-                margin: 0 auto;
-                padding: 40px 0;
-                position: relative;
+            &.fixed {
+                top: 0;
+            }
+
+            .navList {
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
                 align-items: center;
+                gap: 40px;
 
-                .navList {
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    gap: 40px;
-
-                    .navItem {
-                        a {
-                            font-size: 14px;
-                            font-weight: 600;
-                            color: #fff;
-                            letter-spacing: 2px;
-                        }
-                    }
-                }
-
-                .title {
-                    position: absolute;
-                    top: 50px;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-
+                .navItem {
                     a {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-
-                        span {
-                            color: #fff;
-                        }
+                        font-weight: 600;
+                        color: #fff;
+                        letter-spacing: 2px;
                     }
                 }
+            }
 
-                .menuList {
-                    align-self: flex-end;
+            .logo {
+                position: absolute;
+                top: 50px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                user-select: none;
+                cursor: pointer;
+
+                a {
                     display: flex;
-                    justify-content: flex-end;
+                    flex-direction: column;
+                    justify-content: center;
                     align-items: center;
-                    gap: 40px;
 
-                    .menuItem {
-                        a {
-                            font-size: 14px;
-                            font-weight: 600;
-                            color: #fff;
-                            letter-spacing: 2px;
-                        }
+                    span {
+                        color: #fff;
+                    }
+                }
+            }
+
+            .menuList {
+                align-self: flex-end;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 40px;
+
+                .menuItem {
+                    a {
+                        font-weight: 600;
+                        color: #fff;
+                        letter-spacing: 2px;
                     }
                 }
             }

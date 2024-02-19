@@ -24,6 +24,31 @@ html {
   margin: 0 auto;
 }
 
+@media (max-width: 1920px) {
+  .container {
+    width: 1440px;
+  }
+}
+@media (max-width: 1440px) {
+  .container {
+    width: 1024px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 390px;
+  }
+}
+@media (max-width: 390px) {
+  .container {
+    width: 100%;
+  }
+}
 .headerTopBtns {
   padding: 2px 4px;
   color: #bcbcbc;
@@ -74,6 +99,7 @@ html {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5647058824);
+  display: none;
 }
 .header .container .navBar.fixed {
   top: 0;

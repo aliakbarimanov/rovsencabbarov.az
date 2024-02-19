@@ -24,6 +24,22 @@ html {
   margin: 0 auto;
 }
 
+.headerTopBtns {
+  padding: 2px 4px;
+  color: #bcbcbc;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.headerTopBtns:hover {
+  background-color: #bcbcbc;
+  color: #1e1e1e;
+  border-color: #bcbcbc;
+}
+
 .header {
   width: 100%;
 }
@@ -42,25 +58,13 @@ html {
   align-items: center;
   gap: 15px;
 }
-.header .container .headerTop .langList .langItem button {
-  color: #bcbcbc;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
-.header .container .headerTop .langList .langItem button:hover {
-  color: #fff;
-}
 .header .container .headerTop .searchBox input {
-  border: 1px solid transparent;
+  padding: 2px 5px;
   outline: none;
-  color: #bcbcbc;
-}
-.header .container .headerTop .searchBox button {
-  color: #bcbcbc;
-  transition: all 0.3s ease;
-}
-.header .container .headerTop .searchBox button:hover {
-  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: #1e1e1e;
+  letter-spacing: 1.5px;
 }
 .header .container .navBar {
   width: 100%;
@@ -87,7 +91,7 @@ html {
 }
 .header .container .navBar .logo {
   position: absolute;
-  top: 50px;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
@@ -113,6 +117,20 @@ html {
   font-weight: 600;
   color: #fff;
   letter-spacing: 2px;
+}
+
+.footer {
+  width: 100%;
+}
+.footer .container {
+  padding: 0 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .container .footerBox .footerSubBox {
+  display: flex;
+  align-items: center;
 }
 
 .hero {

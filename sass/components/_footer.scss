@@ -1,0 +1,17 @@
+.footer {
+    width: 100%;
+
+    .container{
+        padding: 0 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footerBox{
+            .footerSubBox{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

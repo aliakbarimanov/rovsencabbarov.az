@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/99e64b1514.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
@@ -12,13 +17,13 @@
         <div class="headerTop">
           <ul class="langList">
             <li class="langItem">
-              <button>EN</button>
+              <button class="headerTopBtns">EN</button>
             </li>
             <li class="langItem">
-              <button>РУС</button>
+              <button class="headerTopBtns">РУС</button>
             </li>
             <li class="langItem">
-              <button>AZ</button>
+              <button class="headerTopBtns">AZ</button>
             </li>
           </ul>
           <div class="searchBox">
@@ -28,7 +33,9 @@
               id="searchInput"
               class="searchInput"
             />
-            <button>search glass</button>
+            <button class="headerTopBtns">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </div>
         </div>
         <nav id="navBar" class="navBar">
@@ -56,6 +63,8 @@
               <a href="#">About Us</a>
             </li>
           </ul>
+          <div class="barIcon"><i class="fa-solid fa-bars"></i></div>
+          <div class="xmarkIcon"><i class="fa-solid fa-xmark"></i></div>
         </nav>
       </div>
     </header>
@@ -85,28 +94,32 @@
     </main>
     <footer id="footer" class="footer">
       <div class="container">
-        <ul class="footerNavLinks">
-          <li class="footerNavItem"><a href="#">AAA</a></li>
-          <li class="footerNavItem"><a href="#">AAA</a></li>
-          <li class="footerNavItem"><a href="#">AAA</a></li>
-          <li class="footerNavItem"><a href="#">AAA</a></li>
-          <li class="footerNavItem"><a href="#">AAA</a></li>
-          <li class="footerNavItem"><a href="#">AAA</a></li>
-          <li class="footerNavItem"><a href="#">AAA</a></li>
-          <li class="footerNavItem"><a href="#">AAA</a></li>
-        </ul>
-        <ul class="footerLangList">
-          <li class="footerLangItem"><button>EN</button></li>
-          <li class="footerLangItem"><button>РУС</button></li>
-          <li class="footerLangItem"><button>AZ</button></li>
-        </ul>
-        <ul class="footerSocialLinks">
-          <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
-          <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
-          <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
-          <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
-        </ul>
-        <div class="footerTimeBox">© 2024 Rovsen Cabbarov</div>
+        <div class="footerBox">
+          <ul class="footerSubBox footerNavLinks">
+            <li class="footerNavItem"><a href="#">AAA</a></li>
+            <li class="footerNavItem"><a href="#">AAA</a></li>
+            <li class="footerNavItem"><a href="#">AAA</a></li>
+            <li class="footerNavItem"><a href="#">AAA</a></li>
+            <li class="footerNavItem"><a href="#">AAA</a></li>
+            <li class="footerNavItem"><a href="#">AAA</a></li>
+            <li class="footerNavItem"><a href="#">AAA</a></li>
+            <li class="footerNavItem"><a href="#">AAA</a></li>
+          </ul>
+          <ul class="footerSubBox footerLangList">
+            <li class="footerLangItem"><button>EN</button></li>
+            <li class="footerLangItem"><button>РУС</button></li>
+            <li class="footerLangItem"><button>AZ</button></li>
+          </ul>
+        </div>
+        <div class="footerBox">
+          <ul class="footerSubBox footerSocialLinks">
+            <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
+            <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
+            <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
+            <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
+          </ul>
+          <div class="footerTimeBox">© 2024 Rovsen Cabbarov</div>
+        </div>
       </div>
     </footer>
     <script src="./js/main.js"></script>

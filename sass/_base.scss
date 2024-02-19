@@ -2,3 +2,21 @@
     width: 1920px;
     margin: 0 auto;
 }
+
+
+.headerTopBtns {
+    padding: 2px 4px;
+    color: #bcbcbc;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover {
+        background-color: #bcbcbc;
+        color: #1e1e1e;
+        border-color: #bcbcbc;
+    }
+}

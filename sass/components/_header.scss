@@ -16,34 +16,16 @@
                 justify-content: flex-start;
                 align-items: center;
                 gap: 15px;
-
-                .langItem {
-                    button {
-                        color: #bcbcbc;
-                        text-transform: uppercase;
-                        transition: all .3s ease;
-
-                        &:hover {
-                            color: #fff;
-                        }
-                    }
-                }
             }
 
             .searchBox {
                 input {
-                    border: 1px solid transparent;
+                    padding: 2px 5px;
                     outline: none;
-                    color: #bcbcbc;
-                }
-
-                button {
-                    color: #bcbcbc;
-                    transition: all .3s ease;
-
-                    &:hover {
-                        color: #fff;
-                    }
+                    border: 1px solid transparent;
+                    border-radius: 3px;
+                    color: #1e1e1e;
+                    letter-spacing: 1.5px;
                 }
             }
         }
@@ -78,7 +60,7 @@
 
             .logo {
                 position: absolute;
-                top: 50px;
+                top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 user-select: none;

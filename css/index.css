@@ -67,23 +67,25 @@ html {
 
 .header {
   width: 100%;
+  background-color: #1e1e1e;
 }
-.header .container .headerTop {
+.header .headerTop {
   width: 100%;
+}
+.header .headerTop .container {
   height: 40px;
   padding: 15px 18px;
-  background-color: #1e1e1e;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .container .headerTop .langList {
+.header .headerTop .container .langList {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
 }
-.header .container .headerTop .searchBox input {
+.header .headerTop .container .searchBox input {
   padding: 2px 5px;
   outline: none;
   border: 1px solid transparent;
@@ -91,31 +93,39 @@ html {
   color: #1e1e1e;
   letter-spacing: 1.5px;
 }
-.header .container .navBar {
+.header .navBar {
   width: 100%;
-  padding: 40px 18px;
+  background-color: rgba(0, 0, 0, 0.1882352941);
+}
+.header .navBar .container {
+  padding: 40px 0;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5647058824);
-  display: none;
 }
-.header .container .navBar.fixed {
+.header .navBar .container.fixed {
   top: 0;
 }
-.header .container .navBar .navList {
+.header .navBar .container .navList {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 40px;
+  gap: 5px;
 }
-.header .container .navBar .navList .navItem a {
+.header .navBar .container .navList .navItem a {
+  padding: 8px 10px;
+  border-radius: 5px;
   font-weight: 600;
   color: #fff;
   letter-spacing: 2px;
+  transition: all 0.3s ease;
 }
-.header .container .navBar .logo {
+.header .navBar .container .navList .navItem a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.header .navBar .container .logo {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -123,26 +133,39 @@ html {
   user-select: none;
   cursor: pointer;
 }
-.header .container .navBar .logo a {
+.header .navBar .container .logo a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.header .container .navBar .logo a span {
+.header .navBar .container .logo a span {
   color: #fff;
 }
-.header .container .navBar .menuList {
+.header .navBar .container .menuList {
   align-self: flex-end;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 40px;
+  gap: 5px;
 }
-.header .container .navBar .menuList .menuItem a {
+.header .navBar .container .menuList .menuItem a {
+  padding: 8px 10px;
+  border-radius: 5px;
   font-weight: 600;
   color: #fff;
   letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+.header .navBar .container .menuList .menuItem a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.header .navBar .container .barIcon {
+  display: none;
+}
+.header .navBar .container .xMarkIcon {
+  display: none;
 }
 
 .footer {
@@ -161,12 +184,9 @@ html {
 
 .hero {
   width: 100%;
-  height: 1040px;
+  height: 100vh;
 }
-.hero .container {
-  height: 100%;
-}
-.hero .container img {
+.hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;

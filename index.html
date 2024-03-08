@@ -1,80 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- fontawesome link -->
-    <script
-      src="https://kit.fontawesome.com/99e64b1514.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/index.css" />
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- fontawesome link -->
+  <script src="https://kit.fontawesome.com/99e64b1514.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="headerTop">
       <div class="container">
-        <div class="headerTop">
-          <ul class="langList">
-            <li class="langItem">
-              <button class="headerTopBtns">EN</button>
-            </li>
-            <li class="langItem">
-              <button class="headerTopBtns">РУС</button>
-            </li>
-            <li class="langItem">
-              <button class="headerTopBtns">AZ</button>
-            </li>
-          </ul>
-          <div class="searchBox">
-            <input
-              type="text"
-              name="search"
-              id="searchInput"
-              class="searchInput"
-              autocomplete="off"
-            />
-            <button class="headerTopBtns">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </div>
+        <ul class="langList">
+          <li class="langItem">
+            <button class="headerTopBtns">EN</button>
+          </li>
+          <li class="langItem">
+            <button class="headerTopBtns">РУС</button>
+          </li>
+          <li class="langItem">
+            <button class="headerTopBtns">AZ</button>
+          </li>
+        </ul>
+        <div class="searchBox">
+          <input type="text" name="search" id="searchInput" class="searchInput" autocomplete="off" />
+          <button class="headerTopBtns">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
-        <nav id="navBar" class="navBar">
-          <ul class="navList">
-            <li class="navItem"><a href="#">Products</a></li>
-            <li class="navItem"><a href="#">2023 Collection</a></li>
-            <li class="navItem"><a href="#">2023 Experiences</a></li>
-            <li class="navItem"><a href="#">Projects</a></li>
-            <li class="navItem"><a href="#">Video</a></li>
-          </ul>
-          <h1 class="logo">
-            <a href="#">
-              <span>Rovsen</span>
-              <span>Cabbarov</span>
-            </a>
-          </h1>
-          <ul class="menuList">
-            <li class="menuItem">
-              <a href="#">Materials</a>
-            </li>
-            <li class="menuItem">
-              <a href="#">Contact</a>
-            </li>
-            <li class="menuItem">
-              <a href="#">About Us</a>
-            </li>
-          </ul>
-          <div class="barIcon"><i class="fa-solid fa-bars"></i></div>
-          <div class="xmarkIcon"><i class="fa-solid fa-xmark"></i></div>
-        </nav>
       </div>
-    </header>
-    <main>
-      <section id="hero" class="hero">
-        <div class="container">
-          <img src="./images/1.jpg" alt="Sketch image" />
-        </div>
-      </section>
+    </div>
+    <nav id="navBar" class="navBar">
+      <div class="container">
+        <ul class="navList">
+          <li class="navItem"><a href="#">Products</a></li>
+          <li class="navItem"><a href="#">2023 Collection</a></li>
+          <li class="navItem"><a href="#">2023 Experiences</a></li>
+          <li class="navItem"><a href="#">Projects</a></li>
+          <li class="navItem"><a href="#">Video</a></li>
+        </ul>
+        <h1 class="logo">
+          <a href="#">
+            <span>Rovsen</span>
+            <span>Cabbarov</span>
+          </a>
+        </h1>
+        <ul class="menuList">
+          <li class="menuItem">
+            <a href="#">Materials</a>
+          </li>
+          <li class="menuItem">
+            <a href="#">Contact</a>
+          </li>
+          <li class="menuItem">
+            <a href="#">About Us</a>
+          </li>
+        </ul>
+        <div class="barIcon"><i class="fa-solid fa-bars"></i></div>
+        <div class="xMarkIcon"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- 
       <section id="space" class="space">
         <div class="container">
           <h2 class="sectionTitle">Focus on</h2>
@@ -91,38 +82,45 @@
           <h2 class="boroccoTitle">Discover the borocco style</h2>
           <p class="desc">Find out more</p>
         </a>
-      </section>
-    </main>
-    <footer id="footer" class="footer">
-      <div class="container">
-        <div class="footerBox">
-          <ul class="footerSubBox footerNavLinks">
-            <li class="footerNavItem"><a href="#">AAA</a></li>
-            <li class="footerNavItem"><a href="#">AAA</a></li>
-            <li class="footerNavItem"><a href="#">AAA</a></li>
-            <li class="footerNavItem"><a href="#">AAA</a></li>
-            <li class="footerNavItem"><a href="#">AAA</a></li>
-            <li class="footerNavItem"><a href="#">AAA</a></li>
-            <li class="footerNavItem"><a href="#">AAA</a></li>
-            <li class="footerNavItem"><a href="#">AAA</a></li>
-          </ul>
-          <ul class="footerSubBox footerLangList">
-            <li class="footerLangItem"><button>EN</button></li>
-            <li class="footerLangItem"><button>РУС</button></li>
-            <li class="footerLangItem"><button>AZ</button></li>
-          </ul>
-        </div>
-        <div class="footerBox">
-          <ul class="footerSubBox footerSocialLinks">
-            <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
-            <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
-            <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
-            <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
-          </ul>
-          <div class="footerTimeBox">© 2024 Rovsen Cabbarov</div>
-        </div>
+      </section> -->
+
+    <section id="hero" class="page hero">
+      <img src="./images/1.jpg" alt="Sketch image" />
+    </section>
+    <section id="focus" class="space focus">SPACE</section>
+    <section id="baroque" class="page baroque">BAROQUE</section>
+  </main>
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footerBox">
+        <ul class="footerSubBox footerNavLinks">
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+          <li class="footerNavItem"><a href="#">AAA</a></li>
+        </ul>
+        <ul class="footerSubBox footerLangList">
+          <li class="footerLangItem"><button>EN</button></li>
+          <li class="footerLangItem"><button>РУС</button></li>
+          <li class="footerLangItem"><button>AZ</button></li>
+        </ul>
       </div>
-    </footer>
-    <script src="./js/main.js"></script>
-  </body>
+      <div class="footerBox">
+        <ul class="footerSubBox footerSocialLinks">
+          <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
+          <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
+          <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
+          <li class="footerSocialItem"><a href="#" target="_blank">IG</a></li>
+        </ul>
+        <div class="footerTimeBox">© 2024 Rovsen Cabbarov</div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

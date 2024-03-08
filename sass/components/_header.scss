@@ -1,12 +1,13 @@
 .header {
     width: 100%;
+    background-color: #1e1e1e;
 
-    .container {
-        .headerTop {
-            width: 100%;
+    .headerTop {
+        width: 100%;
+
+        .container {
             height: 40px;
             padding: 15px 18px;
-            background-color: #1e1e1e;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -30,15 +31,18 @@
             }
         }
 
-        .navBar {
-            width: 100%;
-            padding: 40px 18px;
+    }
+
+    .navBar {
+        width: 100%;
+        background-color: #00000030;
+
+        .container {
+            padding: 40px 0;
             position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #00000090;
-            display: none;
 
             &.fixed {
                 top: 0;
@@ -48,13 +52,21 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                gap: 40px;
+                gap: 5px;
 
                 .navItem {
                     a {
+                        padding: 8px 10px;
+                        border-radius: 5px;
                         font-weight: 600;
                         color: #fff;
                         letter-spacing: 2px;
+                        transition: all .3s ease;
+
+                        &:hover {
+                            background-color: #fff;
+                            color: #000;
+                        }
                     }
                 }
             }
@@ -84,15 +96,31 @@
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
-                gap: 40px;
+                gap: 5px;
 
                 .menuItem {
                     a {
+                        padding: 8px 10px;
+                        border-radius: 5px;
                         font-weight: 600;
                         color: #fff;
                         letter-spacing: 2px;
+                        transition: all .3s ease;
+
+                        &:hover {
+                            background-color: #fff;
+                            color: #000;
+                        }
                     }
                 }
+            }
+
+            .barIcon {
+                display: none;
+            }
+
+            .xMarkIcon {
+                display: none;
             }
         }
     }

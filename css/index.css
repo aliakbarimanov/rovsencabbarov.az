@@ -103,7 +103,6 @@ html {
 }
 .header .navBar .container {
   padding: 40px 0;
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,24 +128,6 @@ html {
   background-color: #fff;
   color: #000;
 }
-.header .navBar .container .logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  user-select: none;
-  cursor: pointer;
-  display: none;
-}
-.header .navBar .container .logo a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.header .navBar .container .logo a span {
-  color: #fff;
-}
 .header .navBar .container .menuList {
   align-self: flex-end;
   display: flex;
@@ -167,260 +148,151 @@ html {
   color: #000;
 }
 .header .navBar .container .barIcon {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
   display: none;
 }
 .header .mobileMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #1e1e1e;
+  width: 0;
+  height: 100vh;
+  padding: 30px;
+  opacity: 0;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  transition: all 0.3s ease;
   display: none;
+}
+.header .mobileMenu.active {
+  width: 400px;
+  opacity: 1;
+  visibility: visible;
+}
+.header .mobileMenu .closeBtn {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #bcbcbc;
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #bcbcbc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header .mobileMenu .closeBtn:hover {
+  background-color: #bcbcbc;
+  color: #1e1e1e;
+}
+.header .mobileMenu .mobileSearchBox {
+  padding-left: 8px;
+}
+.header .mobileMenu .mobileSearchBox input {
+  padding: 2px 5px;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: #1e1e1e;
+  letter-spacing: 1.5px;
+}
+.header .mobileMenu .mobileSearchBox button {
+  padding: 2px 4px;
+  color: #bcbcbc;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header .mobileMenu .mobileSearchBox button:hover {
+  background-color: #bcbcbc;
+  color: #1e1e1e;
+  border-color: #bcbcbc;
+}
+.header .mobileMenu .mobileMenuList {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+.header .mobileMenu .mobileMenuList .mobileMenuItem a {
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+.header .mobileMenu .mobileMenuList .mobileMenuItem a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.header .mobileMenu .mobileLangList {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  padding-left: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: none;
+}
+.header .mobileMenu .mobileLangList .mobileLangItem button {
+  padding: 2px 4px;
+  color: #bcbcbc;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header .mobileMenu .mobileLangList .mobileLangItem button:hover {
+  background-color: #bcbcbc;
+  color: #1e1e1e;
+  border-color: #bcbcbc;
 }
 
 @media (max-width: 1024px) {
-  .header {
-    width: 100%;
-    background-color: #1e1e1e;
-  }
-  .header .headerTop {
-    width: 100%;
-  }
-  .header .headerTop .container {
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-  }
-  .header .headerTop .container .langList {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 15px;
-  }
-  .header .headerTop .container .langList .langItem .headerTopBtns {
-    padding: 2px 4px;
-    color: #bcbcbc;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  .header .headerTop .container .langList .langItem .headerTopBtns:hover {
-    background-color: #bcbcbc;
-    color: #1e1e1e;
-    border-color: #bcbcbc;
-  }
-  .header .headerTop .container .searchBox input {
-    padding: 2px 5px;
-    outline: none;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    color: #1e1e1e;
-    letter-spacing: 1.5px;
-  }
-  .header .headerTop .container .searchBox .inputBtn {
-    padding: 2px 4px;
-    color: #bcbcbc;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  .header .headerTop .container .searchBox .inputBtn:hover {
-    background-color: #bcbcbc;
-    color: #1e1e1e;
-    border-color: #bcbcbc;
-  }
-  .header .navBar {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.1882352941);
-  }
   .header .navBar .container {
-    position: relative;
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
-    padding: 20px;
-  }
-  .header .navBar .container.fixed {
-    top: 0;
+    padding: 20px 30px;
   }
   .header .navBar .container .navList {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
     display: none;
-  }
-  .header .navBar .container .navList .navItem a {
-    padding: 8px 10px;
-    border-radius: 5px;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 2px;
-    transition: all 0.3s ease;
-  }
-  .header .navBar .container .navList .navItem a:hover {
-    background-color: #fff;
-    color: #000;
-  }
-  .header .navBar .container .logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    user-select: none;
-    cursor: pointer;
-    display: none;
-  }
-  .header .navBar .container .logo a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .header .navBar .container .logo a span {
-    color: #fff;
   }
   .header .navBar .container .menuList {
-    align-self: flex-end;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 5px;
     display: none;
-  }
-  .header .navBar .container .menuList .menuItem a {
-    padding: 8px 10px;
-    border-radius: 5px;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 2px;
-    transition: all 0.3s ease;
-  }
-  .header .navBar .container .menuList .menuItem a:hover {
-    background-color: #fff;
-    color: #000;
   }
   .header .navBar .container .barIcon {
     display: block;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
   }
   .header .mobileMenu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #1e1e1e;
-    width: 0;
-    height: 100vh;
-    padding: 30px;
-    opacity: 0;
-    visibility: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
-    transition: all 0.3s ease;
   }
-  .header .mobileMenu.active {
-    width: 400px;
-    opacity: 1;
-    visibility: visible;
-  }
-  .header .mobileMenu .closeBtn {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #bcbcbc;
-    border-radius: 5px;
-    background-color: transparent;
-    font-weight: 600;
-    letter-spacing: 3px;
-    color: #bcbcbc;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  .header .mobileMenu .closeBtn:hover {
-    background-color: #bcbcbc;
-    color: #1e1e1e;
-  }
-  .header .mobileMenu .mobileSearchBox {
-    padding-left: 8px;
-  }
-  .header .mobileMenu .mobileSearchBox input {
-    padding: 2px 5px;
-    outline: none;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    color: #1e1e1e;
-    letter-spacing: 1.5px;
-  }
-  .header .mobileMenu .mobileSearchBox button {
-    padding: 2px 4px;
-    color: #bcbcbc;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  .header .mobileMenu .mobileSearchBox button:hover {
-    background-color: #bcbcbc;
-    color: #1e1e1e;
-    border-color: #bcbcbc;
-  }
-  .header .mobileMenu .mobileMenuList {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 15px;
-  }
-  .header .mobileMenu .mobileMenuList .mobileMenuItem a {
-    color: #fff;
-    padding: 8px 10px;
-    border-radius: 5px;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 2px;
-    transition: all 0.3s ease;
-  }
-  .header .mobileMenu .mobileMenuList .mobileMenuItem a:hover {
-    background-color: #fff;
-    color: #000;
-  }
+}
+@media (max-width: 550px) {
   .header .mobileMenu .mobileLangList {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    padding-left: 8px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    display: none;
+    display: block;
   }
-  .header .mobileMenu .mobileLangList .mobileLangItem button {
-    padding: 2px 4px;
-    color: #bcbcbc;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  .header .mobileMenu .mobileLangList .mobileLangItem button:hover {
-    background-color: #bcbcbc;
-    color: #1e1e1e;
-    border-color: #bcbcbc;
+}
+@media (max-width: 425px) {
+  .header .mobileMenu.active {
+    width: 100%;
   }
 }
 .footer {

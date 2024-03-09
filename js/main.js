@@ -17,3 +17,8 @@ const closeBtn = document.querySelector("#closeBtn");
 
 barIcon.addEventListener("click", () => mobileMenu.classList.add("active"));
 closeBtn.addEventListener("click", () => mobileMenu.classList.remove("active"));
+
+
+// footer date function
+const footerTimeBox = document.querySelector("#footerTimeBox");
+footerTimeBox.innerText = `© ${new Date().getFullYear()} Rovsen Cabbarov`;

@@ -273,6 +273,14 @@
 
 @media (max-width: 1024px) {
     .header {
+        .headerTop {    
+            .container {    
+                .searchBox {
+                    display: none;
+                }
+            }
+        }
+
         .navBar {
             .container {
                 justify-content: flex-end;
@@ -299,10 +307,19 @@
 }
 
 @media (max-width: 550px) {
+
     .header {
+        .headerTop {
+            .container {
+                .langList {
+                    display: none;
+                }
+            }
+        }
+
         .mobileMenu {
             .mobileLangList {
-                display: block;
+                display: flex;
             }
         }
     }

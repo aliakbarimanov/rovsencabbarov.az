@@ -18,37 +18,18 @@
 
 @media (max-width: 1024px){
     .container{
-        width: 768px;
-    }
-}
-
-@media (max-width: 768px){
-    .container{
-        width: 390px;
-    }
-}
-
-@media (max-width: 390px){
-    .container{
         width: 100%;
     }
 }
 
+// @media (max-width: 768px){
+//     .container{
+//         width: 390px;
+//     }
+// }
 
-// header buttons
-.headerTopBtns {
-    padding: 2px 4px;
-    color: #bcbcbc;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all .3s ease;
-
-    &:hover {
-        background-color: #bcbcbc;
-        color: #1e1e1e;
-        border-color: #bcbcbc;
-    }
-}
+// @media (max-width: 390px){
+//     .container{
+//         width: 100%;
+//     }
+// }

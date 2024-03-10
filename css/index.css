@@ -402,12 +402,26 @@ html {
 .hero {
   width: 100%;
   height: 100vh;
-  display: none;
+  position: relative;
+  overflow: hidden;
 }
 .hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 3s ease;
+}
+.hero .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1882352941);
+}
+.hero:hover img {
+  transform: scale(1.1);
 }
 
 .space {

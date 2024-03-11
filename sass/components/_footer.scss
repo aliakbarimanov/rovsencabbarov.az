@@ -28,9 +28,12 @@
                 }
 
                 &.footerNavLinks {
+                    flex-wrap: wrap;
                     gap: 5px;
 
                     .footerNavItem {
+                        margin-bottom: 10px;
+
                         a {
                             padding: 8px 10px;
                             border-radius: 5px;
@@ -112,10 +115,6 @@
                 .footerSubBox {    
                     &.rightBox {
                         justify-content: flex-start;
-                    }
-
-                    &.footerNavLinks{
-                        flex-wrap: wrap;
                     }
     
                     &.footerLangList {

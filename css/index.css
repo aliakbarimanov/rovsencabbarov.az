@@ -464,11 +464,10 @@ html {
 }
 
 .baroque {
-  max-width: 1920px;
-  height: 1080px;
+  width: 100%;
+  height: 100vh;
   margin: 0 auto;
   position: relative;
-  display: none;
 }
 .baroque img {
   width: 100%;
@@ -482,11 +481,12 @@ html {
   position: absolute;
   bottom: 60px;
   left: 50%;
+  z-index: 1;
   transform: translate(-50%, 0);
   color: #fff;
   transition: all 0.3s ease;
 }
-.baroque a .boroccoTitle {
+.baroque a .baroqueTitle {
   font-size: 60px;
   letter-spacing: 2px;
   color: #fff;
@@ -497,7 +497,7 @@ html {
   letter-spacing: 1px;
   color: #fff;
 }
-.baroque a:hover .boroccoTitle {
+.baroque a:hover .baroqueTitle {
   color: #1e1e1e;
 }
 .baroque a:hover .desc {

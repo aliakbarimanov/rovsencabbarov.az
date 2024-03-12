@@ -510,6 +510,7 @@ h1 {
 
 .gallery {
   width: 100%;
+  background-color: #1e1e1e;
 }
 .gallery .container {
   padding: 50px 0;
@@ -520,6 +521,7 @@ h1 {
   grid-template-areas: "ten ten ten five five five one one one nine nine nine" "ten ten ten five five five one one one nine nine nine" "ten ten ten three three three two two two nine nine nine" "ten ten ten three three three two two two nine nine nine" "seven seven seven three three three six six six eight eight eight" "seven seven seven four four four six six six eight eight eight" "seven seven seven four four four six six six eight eight eight";
 }
 .gallery .container .photoList .photoItem {
+  border: 1px solid #bcbcbc;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -574,107 +576,11 @@ h1 {
 }
 @media (max-width: 768px) {
   .gallery .container .photoList {
-    gap: 10px;
     grid-template-areas: "ten ten five five" "nine nine one one" "seven seven three three" "eight eight two two" "six six four four";
-  }
-  .gallery .container .photoList .photoItem {
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .gallery .container .photoList .photoItem:nth-child(1) {
-    grid-area: one;
-  }
-  .gallery .container .photoList .photoItem:nth-child(2) {
-    grid-area: two;
-  }
-  .gallery .container .photoList .photoItem:nth-child(3) {
-    grid-area: three;
-  }
-  .gallery .container .photoList .photoItem:nth-child(4) {
-    grid-area: four;
-  }
-  .gallery .container .photoList .photoItem:nth-child(5) {
-    grid-area: five;
-  }
-  .gallery .container .photoList .photoItem:nth-child(6) {
-    grid-area: six;
-  }
-  .gallery .container .photoList .photoItem:nth-child(7) {
-    grid-area: seven;
-  }
-  .gallery .container .photoList .photoItem:nth-child(8) {
-    grid-area: eight;
-  }
-  .gallery .container .photoList .photoItem:nth-child(9) {
-    grid-area: nine;
-  }
-  .gallery .container .photoList .photoItem:nth-child(10) {
-    grid-area: ten;
-  }
-  .gallery .container .photoList .photoItem img {
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    filter: blur(2px);
-    transition: all 0.3s ease;
-  }
-  .gallery .container .photoList .photoItem img:hover {
-    filter: blur(0);
-    transform: scale(1.1);
   }
 }
 @media (max-width: 425px) {
   .gallery .container .photoList {
-    gap: 10px;
     grid-template-areas: "ten" "five" "nine" "one" "seven" "three" "eight" "two" "six" "four";
-  }
-  .gallery .container .photoList .photoItem {
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .gallery .container .photoList .photoItem:nth-child(1) {
-    grid-area: one;
-  }
-  .gallery .container .photoList .photoItem:nth-child(2) {
-    grid-area: two;
-  }
-  .gallery .container .photoList .photoItem:nth-child(3) {
-    grid-area: three;
-  }
-  .gallery .container .photoList .photoItem:nth-child(4) {
-    grid-area: four;
-  }
-  .gallery .container .photoList .photoItem:nth-child(5) {
-    grid-area: five;
-  }
-  .gallery .container .photoList .photoItem:nth-child(6) {
-    grid-area: six;
-  }
-  .gallery .container .photoList .photoItem:nth-child(7) {
-    grid-area: seven;
-  }
-  .gallery .container .photoList .photoItem:nth-child(8) {
-    grid-area: eight;
-  }
-  .gallery .container .photoList .photoItem:nth-child(9) {
-    grid-area: nine;
-  }
-  .gallery .container .photoList .photoItem:nth-child(10) {
-    grid-area: ten;
-  }
-  .gallery .container .photoList .photoItem img {
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    filter: blur(2px);
-    transition: all 0.3s ease;
-  }
-  .gallery .container .photoList .photoItem img:hover {
-    filter: blur(0);
-    transform: scale(1.1);
   }
 }

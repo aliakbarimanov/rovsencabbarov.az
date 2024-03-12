@@ -1,0 +1,254 @@
+.gallery {
+    width: 100%;
+
+    .container {
+        padding: 50px 0;
+
+        .photoList {
+            display: grid;
+            gap: 10px;
+
+            grid-template-areas: "ten ten ten five five five one one one nine nine nine"
+                "ten ten ten five five five one one one nine nine nine"
+                "ten ten ten three three three two two two nine nine nine"
+                "ten ten ten three three three two two two nine nine nine"
+                "seven seven seven three three three six six six eight eight eight"
+                "seven seven seven four four four six six six eight eight eight"
+                "seven seven seven four four four six six six eight eight eight";
+
+
+            .photoItem {
+                border-radius: 10px;
+                overflow: hidden;
+
+                &:nth-child(1) {
+                    grid-area: one;
+                }
+
+                &:nth-child(2) {
+                    grid-area: two;
+                }
+
+
+                &:nth-child(3) {
+                    grid-area: three;
+                }
+
+                &:nth-child(4) {
+                    grid-area: four;
+                }
+
+                &:nth-child(5) {
+                    grid-area: five;
+                }
+
+                &:nth-child(6) {
+                    grid-area: six;
+                }
+
+
+                &:nth-child(7) {
+                    grid-area: seven;
+                }
+
+                &:nth-child(8) {
+                    grid-area: eight;
+                }
+
+                &:nth-child(9) {
+                    grid-area: nine;
+                }
+
+                &:nth-child(10) {
+                    grid-area: ten;
+                }
+
+                img {
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    cursor: pointer;
+                    filter: blur(2px);
+                    transition: all .3s ease;
+
+                    &:hover {
+                        filter: blur(0);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .gallery {
+        .container {
+            padding: 50px 30px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        .container {
+            .photoList {
+                gap: 10px;
+
+                grid-template-areas: "ten ten five five"
+                    "nine nine one one"
+                    "seven seven three three"
+                    "eight eight two two"
+                    "six six four four";
+
+
+                .photoItem {
+                    border-radius: 10px;
+                    overflow: hidden;
+
+                    &:nth-child(1) {
+                        grid-area: one;
+                    }
+
+                    &:nth-child(2) {
+                        grid-area: two;
+                    }
+
+
+                    &:nth-child(3) {
+                        grid-area: three;
+                    }
+
+                    &:nth-child(4) {
+                        grid-area: four;
+                    }
+
+                    &:nth-child(5) {
+                        grid-area: five;
+                    }
+
+                    &:nth-child(6) {
+                        grid-area: six;
+                    }
+
+
+                    &:nth-child(7) {
+                        grid-area: seven;
+                    }
+
+                    &:nth-child(8) {
+                        grid-area: eight;
+                    }
+
+                    &:nth-child(9) {
+                        grid-area: nine;
+                    }
+
+                    &:nth-child(10) {
+                        grid-area: ten;
+                    }
+
+                    img {
+                        border-radius: 10px;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        cursor: pointer;
+                        filter: blur(2px);
+                        transition: all .3s ease;
+
+                        &:hover {
+                            filter: blur(0);
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .gallery {
+        .container {
+            .photoList {
+                gap: 10px;
+
+                grid-template-areas: "ten"
+                    "five"
+                    "nine"
+                    "one"
+                    "seven"
+                    "three"
+                    "eight"
+                    "two"
+                    "six"
+                    "four";
+
+
+                .photoItem {
+                    border-radius: 10px;
+                    overflow: hidden;
+
+                    &:nth-child(1) {
+                        grid-area: one;
+                    }
+
+                    &:nth-child(2) {
+                        grid-area: two;
+                    }
+
+
+                    &:nth-child(3) {
+                        grid-area: three;
+                    }
+
+                    &:nth-child(4) {
+                        grid-area: four;
+                    }
+
+                    &:nth-child(5) {
+                        grid-area: five;
+                    }
+
+                    &:nth-child(6) {
+                        grid-area: six;
+                    }
+
+
+                    &:nth-child(7) {
+                        grid-area: seven;
+                    }
+
+                    &:nth-child(8) {
+                        grid-area: eight;
+                    }
+
+                    &:nth-child(9) {
+                        grid-area: nine;
+                    }
+
+                    &:nth-child(10) {
+                        grid-area: ten;
+                    }
+
+                    img {
+                        border-radius: 10px;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        cursor: pointer;
+                        filter: blur(2px);
+                        transition: all .3s ease;
+
+                        &:hover {
+                            filter: blur(0);
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

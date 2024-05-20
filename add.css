@@ -45,3 +45,13 @@
 .about__section{
   margin-top: 150px;
 }
+
+/* Logo */
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.logo a{
+  font-family: "Andika", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 100%;
+}

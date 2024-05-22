@@ -37,15 +37,6 @@ html{
   transform: scale(1.1);
 }
 
-/* gallery */
-
-.sub-section-4 {
-  background-position: top;
-  clip-path: polygon(25% 0, 70% 0, 70% 100%, 25% 100%);
-}
-
-
-
 /* about */
 .about__section{
   margin-top: 150px;

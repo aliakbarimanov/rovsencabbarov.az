@@ -156,3 +156,10 @@ html{
     grid-template-areas: "ten" "five" "nine" "one" "seven" "three" "eight" "two" "six" "four";
   }
 }
+
+
+/* baroque, sketching, classic */
+.hero__section {
+	padding-top: 200px;
+	margin-bottom: 50px;
+}

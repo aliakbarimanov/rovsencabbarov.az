@@ -61,7 +61,7 @@ $(window).on('load', function() {
 	-------------------*/
 	$('.hero-slider').slick({
 		dots: false,
-		infinite: true,
+		infinite: false,
 		speed: 300,
 		slidesToShow: 1,
 		centerMode: true,
@@ -69,7 +69,7 @@ $(window).on('load', function() {
 		centerMode: true,
 		arrows: false,
 		asNavFor: '.hero-text-slider',
-		autoplay: true,
+		autoplay: false,
 		pauseOnHover:false,
 		autoplaySpeed: 3000,
 		responsive: [
@@ -110,39 +110,6 @@ $(window).on('load', function() {
 		asNavFor: '.hero-slider',
 	});
 
-	/*-------------------
-		Blog Slider
-	-------------------*/
-	$('.blog__slider').slick({
-		dots: false,
-		infinite: true,
-		speed: 300,
-		arrows: false,
-		centerMode: true,
-		centerPadding: '190px',
-		slidesToShow: 2,
-		autoplay: true,
-		pauseOnHover:false,
-		responsive: [
-			{
-				breakpoint: 991,
-				settings: {
-				centerPadding: '0',
-				slidesToShow: 2,
-				slidesToScroll: 2
-				}
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					centerMode: false,
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					centerPadding: '0',
-				}
-			}
-		]
-	});
 
 	/*-------------------
 		Progress Bars
